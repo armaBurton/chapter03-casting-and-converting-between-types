@@ -1,4 +1,6 @@
-﻿int a = 10;
+﻿using static System.Convert;
+
+int a = 10;
 double b = a; //an int can be safely cast as a double
 WriteLine($"{b}");
 
@@ -11,6 +13,11 @@ long e = 10;
 int f = (int)e;
 WriteLine($"e is {e:N0} and f is {f:N0}");
 
-e = long.MaxValue;
+// e = long.MaxValue; //9,223,372,036,854,775,807
+e = 5_000_000_000;
 f = (int)e;
 WriteLine($"e is {e:N0} and f is {f:N0}");
+
+double g = 9.8;
+int h = ToInt32(g);
+WriteLine($"g is {g}, h is {h}");
