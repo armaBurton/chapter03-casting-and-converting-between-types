@@ -22,20 +22,31 @@
 // int h = ToInt32(g);
 // WriteLine($"g is {g}, h is {h}");
 
-//ROUNDING NUMBERS
-double[] doubles = new[] {
-  9.49, 9.5, 9.51, 10.49, 10.5, 10.51
-};
+// // ROUNDING NUMBERS
+// double[] doubles = new[] {
+//   9.49, 9.5, 9.51, 10.49, 10.5, 10.51
+// };
 
-foreach(double n in doubles){
-  WriteLine($"ToInt32({n}) is {ToInt32(n)}");
-}
+// foreach(double n in doubles){
+//   WriteLine($"ToInt32({n}) is {ToInt32(n)}");
+// }
 
-WriteLine($"");
-//taking control of rounding rules
-foreach(double n in doubles){
-  WriteLine(format:
-    "Math.Round({0}, 0, MidPointRounding.AwayFromZero) is {1}",
-    arg0: n, arg1: Math.Round(value: n, digits: 0, mode: MidpointRounding.AwayFromZero)  
-  );
-}
+// WriteLine($"");
+
+// //taking control of rounding rules
+// foreach(double n in doubles){
+//   WriteLine(format:
+//     "Math.Round({0}, 0, MidPointRounding.AwayFromZero) is {1}",
+//     arg0: n, arg1: Math.Round(value: n, digits: 0, mode: MidpointRounding.AwayFromZero)  
+//   );
+// }
+
+//Converting from any type to a string
+int number = 12;
+WriteLine($"{number.ToString()}");
+bool boolean = true;
+WriteLine($"{boolean.ToString()}");
+DateTime now = DateTime.Now;
+WriteLine($"{now.ToString()}");
+object me = new();
+WriteLine($"{me.ToString()}");
