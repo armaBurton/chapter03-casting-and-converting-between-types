@@ -23,10 +23,10 @@
 // WriteLine($"g is {g}, h is {h}");
 
 //ROUNDING NUMBERS
-double[] doubles = new[] {
-  9.49, 9.5, 9.51, 10.49, 10.5, 10.51
-};
+// double[] doubles = new[] {
+//   9.49, 9.5, 9.51, 10.49, 10.5, 10.51
+// };
 
-foreach(double n in doubles){
-  WriteLine($"ToInt32({n}) is {ToInt32(n)}");
-}
+// foreach(double n in doubles){
+//   WriteLine($"ToInt32({n}) is {ToInt32(n)}");
+// }
