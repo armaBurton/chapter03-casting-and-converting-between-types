@@ -1,0 +1,15 @@
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\bin\Debug\net7.0\chapter03-casting-and-converting-between-types.exe
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\bin\Debug\net7.0\chapter03-casting-and-converting-between-types.deps.json
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\bin\Debug\net7.0\chapter03-casting-and-converting-between-types.runtimeconfig.json
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\bin\Debug\net7.0\chapter03-casting-and-converting-between-types.dll
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\bin\Debug\net7.0\chapter03-casting-and-converting-between-types.pdb
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.csproj.AssemblyReference.cache
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.GeneratedMSBuildEditorConfig.editorconfig
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.AssemblyInfoInputs.cache
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.AssemblyInfo.cs
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.csproj.CoreCompileInputs.cache
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.dll
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\refint\chapter03-casting-and-converting-between-types.dll
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.pdb
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\chapter03-casting-and-converting-between-types.genruntimeconfig.cache
+D:\001 work\projects\c#\cs11dotnet7\Chapter03\chapter03-casting-and-converting-between-types\obj\Debug\net7.0\ref\chapter03-casting-and-converting-between-types.dll
