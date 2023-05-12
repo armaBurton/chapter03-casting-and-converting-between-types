@@ -51,18 +51,25 @@
 // object me = new();
 // WriteLine($"{me.ToString()}");
 
-//Convert Binary Object to String
-//allocate an array of 128 bytes
-byte[] binaryObject = new byte[128];
+// //Convert Binary Object to String
+// //allocate an array of 128 bytes
+// byte[] binaryObject = new byte[128];
 
-//populate array with random bytes
-Random.Shared.NextBytes(binaryObject);
-WriteLine($"Binary Object as bytes:");
-for(int index = 0; index < binaryObject.Length; index++){
-  Write($"{binaryObject[index]:X} ");
-}
-WriteLine($"");
+// //populate array with random bytes
+// Random.Shared.NextBytes(binaryObject);
+// WriteLine($"Binary Object as bytes:");
+// for(int index = 0; index < binaryObject.Length; index++){
+//   Write($"{binaryObject[index]:X} ");
+// }
+// WriteLine($"");
 
-//convert to Base64 string and output as text
-string encoded = ToBase64String(binaryObject);
-WriteLine($"Binary Object as Base64 : {encoded}");
+// //convert to Base64 string and output as text
+// string encoded = ToBase64String(binaryObject);
+// WriteLine($"Binary Object as Base64 : {encoded}");
+
+//Parsing from string to numbers or dates and times
+int age = int.Parse("27");
+DateTime birthday = DateTime.Parse("4 July 1980");
+WriteLine($"I was born {age} years ago.");
+WriteLine($"My birthday is {birthday}.");
+WriteLine($"My birthday is {birthday:D}.");
