@@ -77,12 +77,25 @@
 // //Errors using Parse
 // int count = int.Parse("ABC");
 
-//Avoiding exceptions using the TryParse method
-Write($"How many eggs are there? ");
-string? input = ReadLine();
+// //Avoiding exceptions using the TryParse method
+// Write($"How many eggs are there? ");
+// string? input = ReadLine();
 
-if (int.TryParse(input, out int count)){
-  WriteLine($"There are {count} eggs.");
-} else {
-  WriteLine($"I could not parse the input.");
+// if (int.TryParse(input, out int count)){
+//   WriteLine($"There are {count} eggs.");
+// } else {
+//   WriteLine($"I could not parse the input.");
+// }
+
+//Handling exceptions
+//try block
+WriteLine($"Before parsing.");
+Write($"What is your age? ");
+string? input = ReadLine();
+try{
+  int age = int.Parse(input);
+  WriteLine($"You are {age} years old.");
+} catch {
+  
 }
+WriteLine($"After Parsing.");
