@@ -87,22 +87,36 @@
 //   WriteLine($"I could not parse the input.");
 // }
 
-//Handling exceptions
-//try block
-WriteLine($"Before parsing.");
-Write($"What is your age? ");
-string? input = ReadLine();
+// //Handling exceptions
+// //try block
+// WriteLine($"Before parsing.");
+// Write($"What is your age? ");
+// string? input = ReadLine();
+// try{
+//   int age = int.Parse(input);
+//   WriteLine($"You are {age} years old.");
+// //Catch formatException
+// } catch (FormatException) {
+//   WriteLine($"The age you entered is not a valid number format.");
+// //OverflowException
+// } catch (OverflowException){
+//   WriteLine($"The age is a valid number but it is either too big or too small.");
+// //Catching all other exceptions
+// } catch(Exception ex){
+//   WriteLine($"{ex.GetType()} says {ex.Message}");
+// }
+// WriteLine($"After Parsing.");
+
+//Catching with filters
+Write($"Enter an amount: ");
+string amount = ReadLine();
+if (string.IsNullOrEmpty(amount)) return;
+
 try{
-  int age = int.Parse(input);
-  WriteLine($"You are {age} years old.");
-//Catch formatException
-} catch (FormatException) {
-  WriteLine($"The age you entered is not a valid number format.");
-//OverflowException
-} catch (OverflowException){
-  WriteLine($"The age is a valid number but it is either too big or too small.");
-//Catching all other exceptions
-} catch(Exception ex){
-  WriteLine($"{ex.GetType()} says {ex.Message}");
+  decimal amountValue = decimal.Parse(amount);
+  WriteLine($"Amount formatted as currency: {amountValue:C}");
+} catch (FormatException) when (amount.Contains("$")) {
+  WriteLine($"Amounts cannot use the dollar sign!");
+} catch (FormatException){
+  WriteLine($"Amounts must only contain digits!");
 }
-WriteLine($"After Parsing.");
