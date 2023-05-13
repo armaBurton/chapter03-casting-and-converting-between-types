@@ -67,9 +67,22 @@
 // string encoded = ToBase64String(binaryObject);
 // WriteLine($"Binary Object as Base64 : {encoded}");
 
-//Parsing from string to numbers or dates and times
-int age = int.Parse("27");
-DateTime birthday = DateTime.Parse("4 July 1980");
-WriteLine($"I was born {age} years ago.");
-WriteLine($"My birthday is {birthday}.");
-WriteLine($"My birthday is {birthday:D}.");
+// //Parsing from string to numbers or dates and times
+// int age = int.Parse("27");
+// DateTime birthday = DateTime.Parse("4 July 1980");
+// WriteLine($"I was born {age} years ago.");
+// WriteLine($"My birthday is {birthday}.");
+// WriteLine($"My birthday is {birthday:D}.");
+
+// //Errors using Parse
+// int count = int.Parse("ABC");
+
+//Avoiding exceptions using the TryParse method
+Write($"How many eggs are there? ");
+string? input = ReadLine();
+
+if (int.TryParse(input, out int count)){
+  WriteLine($"There are {count} eggs.");
+} else {
+  WriteLine($"I could not parse the input.");
+}
