@@ -95,7 +95,13 @@ string? input = ReadLine();
 try{
   int age = int.Parse(input);
   WriteLine($"You are {age} years old.");
-//Catching all exceptions
+//Catch formatException
+} catch (FormatException) {
+  WriteLine($"The age you entered is not a valid number format.");
+//OverflowException
+} catch (OverflowException){
+  WriteLine($"The age is a valid number but it is either too big or too small.");
+//Catching all other exceptions
 } catch(Exception ex){
   WriteLine($"{ex.GetType()} says {ex.Message}");
 }
