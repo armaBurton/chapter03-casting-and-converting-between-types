@@ -134,16 +134,15 @@
 //   }
 // }
 
-//ErrorHandling
+// //ErrorHandling
 
-Write($"Enter a number between 0 and 255: ");
-string? input1 = ReadLine();
-Write($"Enter another number between 0 and 255: ");
-string? input2 = ReadLine();
-
-try{
-  double division = double.Parse(input1) / double.Parse(input2);
-  WriteLine($"{input1} divided by {input2} is {division}.");
-} catch (FormatException) {
-  WriteLine($"FormatException: Input string was not in a correct format.");
-}
+// Write($"Enter a number between 0 and 255: ");
+// string? input1 = ReadLine();
+// Write($"Enter another number between 0 and 255: ");
+// string? input2 = ReadLine();
+// try{
+//   double division = double.Parse(input1) / double.Parse(input2);
+//   WriteLine($"{input1} divided by {input2} is {division}.");
+// } catch (FormatException) {
+//   WriteLine($"FormatException: Input string was not in a correct format.");
+// }
