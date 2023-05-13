@@ -121,15 +121,29 @@
 //   WriteLine($"Amounts must only contain digits!");
 // }
 
-//Fizz Buzz
-for (int i = 1; i <=100; i++){
-  if(i % 3 == 0 && i % 5 == 0){
-    Write($"FizzBuzz ");
-  } else if (i % 3 == 0){
-    Write($"Fizz ");
-  } else if (i % 5 == 0){
-    Write($"Buzz ");
-  } else {
-    Write($"{i} ");
-  }
+// //Fizz Buzz
+// for (int i = 1; i <=100; i++){
+//   if(i % 3 == 0 && i % 5 == 0){
+//     Write($"FizzBuzz ");
+//   } else if (i % 3 == 0){
+//     Write($"Fizz ");
+//   } else if (i % 5 == 0){
+//     Write($"Buzz ");
+//   } else {
+//     Write($"{i} ");
+//   }
+// }
+
+//ErrorHandling
+
+Write($"Enter a number between 0 and 255: ");
+string? input1 = ReadLine();
+Write($"Enter another number between 0 and 255: ");
+string? input2 = ReadLine();
+
+try{
+  double division = double.Parse(input1) / double.Parse(input2);
+  WriteLine($"{input1} divided by {input2} is {division}.");
+} catch (FormatException) {
+  WriteLine($"FormatException: Input string was not in a correct format.");
 }
