@@ -107,16 +107,29 @@
 // }
 // WriteLine($"After Parsing.");
 
-//Catching with filters
-Write($"Enter an amount: ");
-string amount = ReadLine();
-if (string.IsNullOrEmpty(amount)) return;
+// //Catching with filters
+// Write($"Enter an amount: ");
+// string amount = ReadLine();
+// if (string.IsNullOrEmpty(amount)) return;
 
-try{
-  decimal amountValue = decimal.Parse(amount);
-  WriteLine($"Amount formatted as currency: {amountValue:C}");
-} catch (FormatException) when (amount.Contains("$")) {
-  WriteLine($"Amounts cannot use the dollar sign!");
-} catch (FormatException){
-  WriteLine($"Amounts must only contain digits!");
+// try{
+//   decimal amountValue = decimal.Parse(amount);
+//   WriteLine($"Amount formatted as currency: {amountValue:C}");
+// } catch (FormatException) when (amount.Contains("$")) {
+//   WriteLine($"Amounts cannot use the dollar sign!");
+// } catch (FormatException){
+//   WriteLine($"Amounts must only contain digits!");
+// }
+
+//Fizz Buzz
+for (int i = 1; i <=100; i++){
+  if(i % 3 == 0 && i % 5 == 0){
+    Write($"FizzBuzz ");
+  } else if (i % 3 == 0){
+    Write($"Fizz ");
+  } else if (i % 5 == 0){
+    Write($"Buzz ");
+  } else {
+    Write($"{i} ");
+  }
 }
